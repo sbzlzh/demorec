@@ -1,6 +1,0 @@
-rxbreach模式需要在'''net.Receive("RoundStart", function(len)'''中添加
-net.Start("RoundStart")
-net.SendToServer()
-以及'''net.Receive("PostStart", function(len)'''中添加
-net.Start("PostStart")
-net.SendToServer()
