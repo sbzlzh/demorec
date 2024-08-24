@@ -13,3 +13,10 @@ end)
 cvars.AddChangeCallback("demorec_show_chat_messages", function(name, old, new)
     SetGlobalInt("demorec_show_chat_messages", tonumber(new))
 end)
+
+function GetPlayerSteamID64(ply)
+    if IsValid(ply) and ply:IsPlayer() then
+        return ply:SteamID64()
+    end
+    return nil
+end
